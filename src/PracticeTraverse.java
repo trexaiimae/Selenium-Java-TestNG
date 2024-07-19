@@ -16,7 +16,7 @@ public class PracticeTraverse {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		
 		//Sibling - child to parent traverse syntax
-		System.out.println(driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).getText());
+		System.out.println(driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).getText());// Header>div>button[1]>
 		driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).click();
 		//or
 		//child to parent syntaxt
