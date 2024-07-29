@@ -7,11 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class DynamicDropdowns {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Trexie\\Documents\\Installers\\Work\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\USER\\Documents\\Installers\\WEB AUTOMATION\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 	
 		
@@ -22,28 +23,25 @@ public class DynamicDropdowns {
 		
 		
 		
-	
-		
-//		////a[@text='Chennai (MAA)'] xpath for chennai  (//a[@text='Chennai (MAA)'])[2]
-//		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
-//		driver.findElement(By.xpath("(//a[@text='Bengaluru (BLR)'])[1]")).click();
-//		Thread.sleep(2000);
-//		WebElement element = driver.findElement(By.xpath("(//a[@text='Chennai (MAA)'])[2]"));
-//		System.out.println("Element found: " + element.getText());
-//		element.click();
-//		
-		// other way to handle without using indexes
-		///  //div[@id="glsctl00_mainContent_ddl_originStation1_CTNR"] //a[@text='Bengaluru (BLR)'] This is parent child way of locating Parent [Space] Child xpaths
-		
+		//select From destination
 		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click(); // Container of the list
 		driver.findElement(By.xpath("//div[@id=\"glsctl00_mainContent_ddl_originStation1_CTNR\"] //a[@text='Bengaluru (BLR)']")).click();// // parent child xpath syntax
 		Thread.sleep(1000);
 		
+		//select to destination
 		WebElement element = driver.findElement(By.xpath("//div[@id=\"glsctl00_mainContent_ddl_destinationStation1_CTNR\"] //a[@text='Chennai (MAA)']"));
 		System.out.println("Element found: " + element.getText());
 		element.click();
 		Thread.sleep(3000);
-		driver.close();
+		
+		//select first calendar
+		driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
+		Thread.sleep(3000);
+		
+		//check if second calendar is enabled
+//		WebElement SecondCalendar =driver.findElement(By.name("ctl00$mainContent$view_date2"));
+	
+
 		
 
 	}

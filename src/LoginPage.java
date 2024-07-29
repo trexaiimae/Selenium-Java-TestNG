@@ -1,20 +1,22 @@
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 
 
-public class LoginPage {
+public class LoginPage extends BaseTest {
 
-	public static void main(String[] args) throws InterruptedException {
-		
-		//Chrome
-		System.setProperty("wendriver.chrome.driver", "C:\\Users\\Trexie\\Documents\\Installers\\Work\\Drivers,chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
+	@Test
+	public void loginTest() throws InterruptedException  {
+
+//		System.setProperty("wendriver.chrome.driver", "C:\\Users\\USER\\Documents\\Installers\\WEB AUTOMATION\\drivers\\chromedriver.exe");
+//		ChromeDriver driver = new ChromeDriver();
+//		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
 		driver.findElement(By.id("inputUsername")).sendKeys("Trexaii");// input by id
 		driver.findElement(By.name("inputPassword")).sendKeys("tester"); // input by name
 		driver.findElement(By.className("signInBtn")).click(); // click button, using classname

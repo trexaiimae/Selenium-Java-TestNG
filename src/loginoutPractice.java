@@ -9,7 +9,7 @@ public class loginoutPractice {
 
 	public static void main(String[] args) throws InterruptedException {
 		String name = "Trexaii";
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Trexie\\Documents\\Installers\\Work\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\USER\\Documents\\Installers\\WEB AUTOMATION\\drivers\\chromedriver.exe");
 //		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Trexie\\Documents\\Installers\\Work\\Drivers\\geckodriver.exe");
 //		System.setProperty("webdriver.edge.driver", "C:\\Users\\Trexie\\Documents\\Installers\\Work\\Drivers\\msedgedriver.exe");
 		WebDriver driver = new ChromeDriver();

@@ -1,3 +1,4 @@
+package Assignments;
 
 public class AccessMethodtoMethod {
 

@@ -9,12 +9,12 @@ import org.openqa.selenium.support.ui.Select;
 public class DropdownPractice {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Trexie\\Documents\\Installers\\Work\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\USER\\Documents\\Installers\\WEB AUTOMATION\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		//maximize browser size
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		
 		//work only with select tag
@@ -36,6 +36,9 @@ public class DropdownPractice {
 		Thread.sleep(2000L);
 		//Select passenger and add quantity
 		driver.findElement(By.id("divpaxinfo")).click();
+		
+		
+		
 	
 		
 		//apply while loop in clicking multiple times
