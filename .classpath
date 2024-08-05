@@ -18,5 +18,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Installers/WEB AUTOMATION/commons-io-2.16.1-bin/commons-io-2.16.1/commons-io-2.16.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Installers/WEB AUTOMATION/commons-io-2.16.1-bin/commons-io-2.16.1/commons-io-2.16.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Installers/WEB AUTOMATION/commons-io-2.16.1-bin/commons-io-2.16.1/commons-io-2.16.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Installers/WEB AUTOMATION/commons-io-2.16.1-bin/commons-io-2.16.1/commons-io-2.16.1-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/USER/Documents/Installers/WEB AUTOMATION/commons-io-2.16.1-bin/commons-io-2.16.1/commons-io-2.16.1-test-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
