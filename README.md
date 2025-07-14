@@ -2,7 +2,7 @@
 
 This repository contains my practice work and project files based on the Udemy course:
 
-📘 Course Title: [Selenium Webdriver with Java-Basics to Advance+Frameworks)  
+📘 Course Title: Selenium Webdriver with Java-Basics to Advance+Frameworks  
 🎓 Instructor: Rahul Shetty
 ⏳ Status: Completed
 
