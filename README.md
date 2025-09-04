@@ -41,4 +41,5 @@ This demo showcases my automated test script for an e-commerce application:
 
 ## Demo Video
 
-![Demo Video](https://drive.google.com/file/d/1RXyD8Y6E1ldJovzzgLA-3UHLrHgOnrYB/view?t=2)
+[Watch the demo video](https://drive.google.com/file/d/1RXyD8Y6E1ldJovzzgLA-3UHLrHgOnrYB/view)
+
